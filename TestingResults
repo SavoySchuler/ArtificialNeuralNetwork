@@ -1,0 +1,75 @@
+Train results from standard bh.prm: 
+
+Epoch 10: MSE - 0.5845
+Epoch 100: MSE - 0.3438
+Epoch 500: MSE - 0.1641
+Epoch 1000: MSE - 0.1366 // very little movement from Epoch 740
+
+
+Test results on standard bh.prm trained with bh.prm:              f
+
+MSE: 0.1342  Accuracy 91.67% 
+
+
+Test results on standard nw.prm trained with bh.prm:
+
+MSE: 2.0646  Accuracy: 0.00% (only one was classified correctly)
+
+
+Train results from standard nw.prm:
+Epoch 10: MSE - 0.5240
+Epoch 100: MSE - 0.1665
+Epoch 150: MSE - 0.0553
+Epoch 220: MSE - 0.0140  // training terminated on epoch 220
+
+Test results from standard nw.prm trained with nw.prm
+MSE: 0.0123 Accuracy - 100.00%
+
+
+Test results from standard bh.prm trained with nw.prm
+MSE: 1.9976  Accuracy - 0.00%
+
+
+
+Train results with 3 layers of weights and the number of nodes per layer to 25 4 5 3:
+
+Epoch 10: MSE - 0.5241
+Epoch 100: MSE - 0.3445
+Epoch 500: MSE - 0.0964
+Epoch 760: MSE - 0.0816 // training terminated on Epoch 760
+
+
+Test results on modified bh.prm:
+MSE: 0.0799  Accuracy: 94.44%  // two were misclassified
+
+
+
+Train results from bh.prm with 5 months burn data, 12 months of pdsi:
+Epoch 10: MSE - 0.5268
+Epoch 100: MSE - 0.3311
+Epoch 500: MSE - 0.2330
+Epoch 1000: MSE - 0.1483  // gets stuck around Epoch 100
+
+
+Test results on modifed bh.prm:
+MSE: 0.2144    Accuracy: 86.49%
+
+
+
+Train results from bh.prm with burn severity cutoffs changed to 2000, 20000 respectively:
+
+Epoch 10: MSE - 0.5281
+Epoch 100: MSE - 0.2209
+Epoch 500: MSE - 0.1419
+Epoch 1000: MSE - 0.0826 // very little movement from Epoch 740
+
+
+
+Test results on modified bh.prm:
+
+MSE: 0.0814  Accuracy 94.44%  (misclassified two years)
+
+
+
+
+
